@@ -21,10 +21,11 @@ brunch m95
 
 ## Known gaps
 
-These trees do not build a complete ROM yet:
-
 - MX6 and M5c need `vendor/forge/ims` (IMS service), which is not public yet.
-- The device trees still use prebuilt kernels; the MX6 one is missing some stock configuration files.
+- The kernels are built from source. Their configuration and device trees match the kernels running on the phones,
+  but boot images built this way have not been tested on the phones yet.
+- The M3 Note OTA package installs only on the board pairs listed in the device tree's
+  `installer/factory_pairs.inc`, which is empty; use the built `boot.img` and `system.img`.
 - The LineageOS platform changes these devices need are applied by `device/meizu/common` when
-  `build/envsetup.sh` is sourced (see [its README](https://github.com/nomorecoolnicknames/android_device_meizu_common));
-  they are being moved into the device trees.
+  `build/envsetup.sh` is sourced (see [its README](https://github.com/nomorecoolnicknames/android_device_meizu_common)).
+- Google Camera on the MX6 is optional: run `device/meizu/m95/gcam/fetch-gcam.sh` and build with `M95_WITH_GCAM=true`.
