@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Meizu MX6 (m95) - LineageOS 20.0 -->
+<manifest>
+  <remote name="remeizu" fetch="https://github.com/nomorecoolnicknames" />
+
+  <remove-project name="LineageOS/android_hardware_ril" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="remeizu" revision="lineage-20.0" />
+
+  <project path="device/meizu/m95" name="android_device_meizu_m95" remote="remeizu" revision="lineage-20.0" />
+  <project path="kernel/meizu/m95" name="android_kernel_meizu_m95" remote="remeizu" revision="lineage-20.0" />
+  <project path="vendor/meizu/m95" name="android_vendor_meizu_m95" remote="remeizu" revision="lineage-20.0" />
+</manifest>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Meizu M5c (m5c) - LineageOS 20.0 -->
+<manifest>
+  <remote name="remeizu" fetch="https://github.com/nomorecoolnicknames" />
+
+  <project path="device/meizu/m5c" name="android_device_meizu_m5c" remote="remeizu" revision="lineage-20.0" />
+  <project path="vendor/meizu/m5c" name="android_vendor_meizu_m5c" remote="remeizu" revision="lineage-20.0" />
+</manifest>

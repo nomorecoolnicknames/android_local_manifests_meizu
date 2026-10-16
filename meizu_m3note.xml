@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Meizu M3 Note (M681 / L681) - LineageOS 20.0 -->
+<manifest>
+  <remote name="remeizu" fetch="https://github.com/nomorecoolnicknames" />
+
+  <project path="device/meizu/m3note" name="android_device_meizu_m3note" remote="remeizu" revision="lineage-20.0" />
+  <project path="kernel/meizu/m681" name="android_kernel_meizu_mt6755" remote="remeizu" revision="lineage-20.0" />
+  <project path="vendor/meizu/m3note" name="android_vendor_meizu_m3note" remote="remeizu" revision="lineage-20.0" />
+</manifest>
