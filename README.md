@@ -25,5 +25,6 @@ These trees do not build a complete ROM yet:
 
 - MX6 and M5c need `vendor/forge/ims` (IMS service), which is not public yet.
 - The device trees still use prebuilt kernels; the MX6 one is missing some stock configuration files.
-- The images on the phones were built with changes to LineageOS platform projects that are being moved into the
-  device trees.
+- The LineageOS platform changes these devices need are applied by `device/meizu/common` when
+  `build/envsetup.sh` is sourced (see [its README](https://github.com/nomorecoolnicknames/android_device_meizu_common));
+  they are being moved into the device trees.

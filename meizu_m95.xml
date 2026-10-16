@@ -6,6 +6,7 @@
   <remove-project name="LineageOS/android_hardware_ril" />
   <project path="hardware/ril" name="android_hardware_ril" remote="remeizu" revision="lineage-20.0" />
 
+  <project path="device/meizu/common" name="android_device_meizu_common" remote="remeizu" revision="lineage-20.0" />
   <project path="device/meizu/m95" name="android_device_meizu_m95" remote="remeizu" revision="lineage-20.0" />
   <project path="kernel/meizu/m95" name="android_kernel_meizu_m95" remote="remeizu" revision="lineage-20.0" />
   <project path="vendor/meizu/m95" name="android_vendor_meizu_m95" remote="remeizu" revision="lineage-20.0" />
