@@ -22,8 +22,9 @@ brunch m95
 ## Known gaps
 
 - MX6 and M5c need `vendor/forge/ims` (IMS service), which is not public yet.
-- The kernels are built from source. Their configuration and device trees match the kernels running on the phones,
-  but boot images built this way have not been tested on the phones yet.
+- The kernels are built from source. On the MX6 a boot image with the source-built kernel has been tested on the
+  phone; on the M5c and the M3 Note the configuration and device trees match the kernels running on the phones, but
+  boot images built this way have not been tested yet.
 - The M3 Note OTA package checks the board before installing and accepts only the M681. A full `brunch` with the
   recovery and cache images and an installation on the phone have not been tested yet.
 - The LineageOS platform changes these devices need are applied by `device/meizu/common` when
